@@ -6,36 +6,31 @@
   <meta name="viewport" content="width=device-width">
   <title>index</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
+   <link rel="stylesheet" type="text/css" href="css/index.css" media="screen" /> 
+
 </head>
 
 <body>
-  
-<form class="formulario">
- <h1> Inicia Sesión</h1>
-<div class="contenedor">
-   
-  <div class="input-contenedor">
-     <i class="fa-solid fa-user icon"></i>
-     <input  id="user" type="text" placeholder="Usuario">
-     </div>
 
-   <div class="input-contenedor">
-     <i class="fa-solid fa-key icon"></i>
-     <input id="password" type="password" placeholder="Contraseña">
-     </div>
+ <div id="formulario">
+      <div class="imagen">
+      <img class="imagen" src="imagen/imagen.jpg">
+      </div>
+  <form>
+    <label for="Usuario:">Código de Estudiante</label><br>
+    <input type="text" id="codigo" name="user" class="texto"> <br><br>  
+    <label for="Password:">Password</label><br>
+    <input type="text" id="password" name="password" class="texto"> <br><br>  
+    </label>
+    <input class="boton" type="button" value="Ingresar" id="ingresar">
 
-  <div class="Ingresar">
-  <input  id="ingresar" type="button" value="Ingresar" class="button">
-  <p> ¿No tienes cuenta? </p><a class="link"href="register.html" >Registrate</a>
-  </div>
+</form>
     
 </div>
 
-  
 </form>
 
-  <script  type="text/javascript" src="../js/index.js"></script>
-  <script src="script.js"></script>
+  <script  type="text/javascript" src="js/index.js"></script>
 </body>
 
 </html>
