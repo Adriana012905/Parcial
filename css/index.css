@@ -73,3 +73,9 @@ background-color: #97d8d7
     border-radius:2%;
   }
 }
+
+@media(max-width:215px){
+  .boton{   
+    width:50%;
+  
+}
