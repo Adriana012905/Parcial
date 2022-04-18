@@ -1,5 +1,5 @@
-function loginFunc(e)
-{
+function loginFunc(e){
+
 
 
     var username = document.getElementById('codigo').value;
@@ -25,7 +25,7 @@ function loginFunc(e)
 
 
 
-document.getElementById("ingresar").onclick = function (){
+document.getElementById("ingresar").onclick = function(){
 
 
     var username = document.getElementById('codigo').value;
@@ -33,7 +33,7 @@ document.getElementById("ingresar").onclick = function (){
 
 
     var urllogin = "https://api-parcial.crangarita.repl.co/login";
-    var data = {codigo: username, password: clave};
+    var data = {codigo: username, clave: clave};
     
     fetch(urllogin, {
       method: 'POST', // or 'PUT'
@@ -46,7 +46,8 @@ document.getElementById("ingresar").onclick = function (){
     }).then(res => res.json())
     .catch(error => console.error('Error:', error))
     .then(response => {
-                        if(response.login){
+      console.log(response);
+                        if(response.codigo){
                           console.log('Success:', response);
                           localStorage.setItem("codigo", response.codigo);
                           localStorage.setItem("password", response.password);
